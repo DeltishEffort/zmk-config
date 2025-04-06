@@ -8,20 +8,15 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp CAPS>;
-        };
-        combo_amps {
-            timeout-ms = <50>;
-            key-positions = <5 6>;
-            bindings = <&kp AMPS>;
-        };
-        combo_lpar {
+        combo_minus {
             timeout-ms = <50>;
             key-positions = <6 7>;
-            bindings = <&kp LPAR>;
+            bindings = <&kp MINUS>;
+        };
+        combo_plus {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp PLUS>;
         };
     };
 };
@@ -73,11 +68,11 @@
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ INSERT   │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
-            &kp INS    &kp N1     &kp N2     &kp N3     &trans         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
+        //│ !        │  @       │  #       │  $       │ %        │   │ ^        │ &        │ *        │ (        │  )       │
+            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ DELETE   │  4       │  5       │  6       │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
-            &kp DEL    &kp N4     &kp N5     &kp N6     &trans         &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp SQT
+        //│ 1        │  2       │  3       │  4       │ 5        │   │ 6        │ 7        │ 8        │ 9        │  0       │
+            &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
            &kp ESC     &kp N7     &kp N8     &kp N9     &kp N0         &trans     &trans     &trans     &trans     &trans
