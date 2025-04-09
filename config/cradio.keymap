@@ -72,7 +72,7 @@
         //│ CAPS     │ 1 !      │ 2 @      │ 3 #      │  0       │   │ *        │ [ {      │ ] }      │ "        │          │
            &kp ESC     &kp N1     &kp N2     &kp N3     &kp N0         &kp STAR   &kp LBKT   &kp RPAR   &kp DQT    &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &kp LSHIFT &kp SPACE 
+                                             &trans     &trans         &mt BSPC LSHIFT &kp SPACE 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
