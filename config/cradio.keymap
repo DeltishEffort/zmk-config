@@ -8,9 +8,14 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combo_LESC {
             timeout-ms = <50>;
             key-positions = <16 17>;
+            bindings = <&kp CAPS>;
+        };
+        combo_RESC {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
             bindings = <&kp CAPS>;
         };
     };
@@ -80,14 +85,14 @@
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │  [       │  {       │  }       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
-            &trans     &kp LBKT   &kp LBRC   &kp RBRC   &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
+        //│          │ F7       │ F8       │ F9       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
+            &trans     &kp F7     &kp F8     &kp F9     &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  !       │  @       │  #       │  $       │  %       │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  `       │
-            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp GRAVE
+        //│  !       │ F4       │ F5       │ F6       │  %       │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  `       │
+            &kp EXCL   &kp F4     &kp F5     &kp F6     &kp PRCNT      &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp GRAVE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │ F1       │          │          │          │   │  &       │  _       │  +       │  │       │          │
-            &trans     &kp F1     &trans     &trans     &trans         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
+        //│          │ F1       │ F2       │ F3       │          │   │  &       │  _       │  +       │  │       │          │
+            &trans     &kp F1     &kp F2     &kp F3     &trans         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
