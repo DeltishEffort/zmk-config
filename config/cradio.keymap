@@ -89,14 +89,14 @@
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭─────────────     ┬─────────────      ┬─────────────      ┬────────────  ─    ┬──────────╮
-        //│          │ F7       │ F8       │ F9       │ SCROLL UP│   │ M LEFT           │ M UP              │ M DOWN            │ M RIGHT           │  ~       │
-            &trans     &kp F7     &kp F8     &kp F9     &mmv SCRL_UP   &mmv MOVE_LEFT     &mmv MOVE_UP        &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &kp TILDE
+        //│          │ F7       │ F8       │ F9       │ SCROLL UP│   │ M LEFT           │ M UP              │ M DOWN            │ M RIGHT           │ M CLICK  │
+            &trans     &kp F7     &kp F8     &kp F9     &msc SCRL_UP   &mmv MOVE_LEFT     &mmv MOVE_UP        &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &mkp LCLK
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├─────────────     ┼─────────────      ┼─────────────      ┼────────────  ─    ┼──────────┤
-        //│  !       │ F4       │ F5       │ F6       │ SCROLL D │   │ LEFT             │ DOWN              │ UP                │ RIGHT             │  `       │
-            &kp EXCL   &kp F4     &kp F5     &kp F6     &mmv SCRL_DOWN &kp LEFT           &kp DOWN            &kp UP              &kp RIGHT           &kp GRAVE
+        //│ ESC      │ F4       │ F5       │ F6       │ SCROLL D │   │ LEFT             │ DOWN              │ UP                │ RIGHT             │ M RCLICK │
+            &kp ESC    &kp F4     &kp F5     &kp F6     &msc SCRL_DOWN &kp LEFT           &kp DOWN            &kp UP              &kp RIGHT           &mkp RCLK
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├─────────────     ┼─────────────      ┼─────────────      ┼────────────  ─    ┼──────────┤
-        //│          │ F1       │ F2       │ F3       │          │   │                  │ M CLICK           │  +                │  │                │          │
-            &trans     &kp F1     &kp F2     &kp F3     &trans         &trans             &mmv LCLK           &kp PLUS            &kp PIPE            &trans
+        //│          │ F1       │ F2       │ F3       │          │   │                  │ SCROLL LEFT       │ SCROLL RIGHT      │  │                │          │
+            &trans     &kp F1     &kp F2     &kp F3     &trans         &trans             &msc SCRL_LEFT      &msc SCRL_RIGHT     &kp PIPE            &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├─────────────     ┼─────────────      ┼─────────────      ┴────────────  ─    ┴──────────╯
                                              &trans     &trans         &trans             &trans
         //                                 ╰──────────┴──────────╯   ╰─────────────     ┴──────────╯
