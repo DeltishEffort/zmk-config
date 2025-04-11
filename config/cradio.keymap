@@ -88,16 +88,16 @@
 
         left_layer {
             bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭─────────────     ┬─────────────      ┬─────────────      ┬────────────  ─    ┬──────────╮
-        //│          │ F7       │ F8       │ F9       │ SCROLL UP│   │ M LEFT           │ M UP              │ M DOWN            │ M RIGHT           │ M CLICK  │
-            &trans     &kp F7     &kp F8     &kp F9     &msc SCRL_UP   &mmv MOVE_LEFT     &mmv MOVE_UP        &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &mkp LCLK
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├─────────────     ┼─────────────      ┼─────────────      ┼────────────  ─    ┼──────────┤
-        //│ ESC      │ F4       │ F5       │ F6       │ SCROLL D │   │ LEFT             │ DOWN              │ UP                │ RIGHT             │ M RCLICK │
-            &kp ESC    &kp F4     &kp F5     &kp F6     &msc SCRL_DOWN &kp LEFT           &kp DOWN            &kp UP              &kp RIGHT           &mkp RCLK
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├─────────────     ┼─────────────      ┼─────────────      ┼────────────  ─    ┼──────────┤
-        //│          │ F1       │ F2       │ F3       │          │   │                  │ SCROLL LEFT       │ SCROLL RIGHT      │  │                │          │
-            &trans     &kp F1     &kp F2     &kp F3     &trans         &trans             &msc SCRL_LEFT      &msc SCRL_RIGHT     &kp PIPE            &trans
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├─────────────     ┼─────────────      ┼─────────────      ┴────────────  ─    ┴──────────╯
+        //╭──────────────┬──────────┬──────────┬──────────┬──────────╮   ╭─────────────     ┬─────────────      ┬─────────────      ┬────────────  ─    ┬──────────╮
+        //│ BRIGHT UP    │ F7       │ F8       │ F9       │ SCROLL UP│   │ M LEFT           │ M DOWN            │ M UP              │ M RIGHT           │ M CLICK  │
+            &kp C_BRI_UP   &kp F7     &kp F8     &kp F9     &msc SCRL_UP   &mmv MOVE_LEFT     &mmv MOVE_DOWN      &mmv MOVE_UP        &mmv MOVE_RIGHT     &mkp LCLK
+        //├──────────────┼──────────┼──────────┼──────────┼──────────┤   ├─────────────     ┼─────────────      ┼─────────────      ┼────────────  ─    ┼──────────┤
+        //│ ESC          │ F4       │ F5       │ F6       │ SCROLL D │   │ LEFT             │ DOWN              │ UP                │ RIGHT             │ M RCLICK │
+            &kp ESC        &kp F4     &kp F5     &kp F6     &msc SCRL_DOWN &kp LEFT           &kp DOWN            &kp UP              &kp RIGHT           &mkp RCLK
+        //├──────────────┼──────────┼──────────┼──────────┼──────────┤   ├─────────────     ┼─────────────      ┼─────────────      ┼────────────  ─    ┼──────────┤
+        //│ BRIGHT DOWN  │ F1       │ F2       │ F3       │ SCROLL L │   │ SCROLL R         │ VOL DOWN          │ VOL UP            │ MUTE              │ M MCLICK │
+            &kp C_BRI_DN   &kp F1     &kp F2     &kp F3     &msc SCRL_LEFT &msc SCRL_RIGHT    &kp K_VOL_DN        &kp K_VOL_UP        &kp K_MUTE          &mkp MCLK
+        //╰──────────────┴──────────┴──────────┼──────────┼──────────┤   ├─────────────     ┼─────────────      ┼─────────────      ┴────────────  ─    ┴──────────╯
                                              &trans     &trans         &trans             &trans
         //                                 ╰──────────┴──────────╯   ╰─────────────     ┴──────────╯
             >;
